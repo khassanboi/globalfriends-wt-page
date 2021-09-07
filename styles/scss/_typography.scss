@@ -1,0 +1,19 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  align-self: start;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  border-radius: 10rem;
+  background-color: #dc3c4d;
+  color: white;
+}
+
+.btn--lg {
+  padding: 2rem 4rem;
+  font-size: 3rem;
+  margin-top: 5rem;
+}
