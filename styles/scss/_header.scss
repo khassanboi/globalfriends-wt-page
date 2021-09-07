@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  background-color: #3facdc;
+
+  &__content {
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__left {
+    width: 50%;
+    h1 {
+      font-size: 10rem;
+      color: white;
+      animation: textAnimate 10s linear infinite;
+    }
+
+    span {
+      font-size: 4rem;
+      color: white;
+    }
+  }
+
+  &__right {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @keyframes textAnimate {
+    0% {
+      color: white;
+    }
+    50% {
+      color: #f8c000;
+    }
+  }
+}
