@@ -48,3 +48,36 @@ p.text {
   font-size: 2rem;
   text-align: justify;
 }
+
+.link {
+  font-size: 3rem;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+
+  span {
+    font-size: 2.5rem;
+    position: absolute;
+    left: 105%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #f8c000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    text-decoration: underline;
+
+    span {
+      left: 110%;
+    }
+  }
+}
