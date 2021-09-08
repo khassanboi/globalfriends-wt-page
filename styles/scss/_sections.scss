@@ -1,0 +1,24 @@
+.aboutus {
+  display: flex;
+
+  &__left {
+    padding: 5rem;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p.text {
+      padding: 8rem 5rem;
+    }    
+  }
+
+  &__right {
+    width: 45%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
