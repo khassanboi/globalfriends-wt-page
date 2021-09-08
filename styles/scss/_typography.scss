@@ -17,3 +17,29 @@
   font-size: 3rem;
   margin-top: 5rem;
 }
+
+h2.h2 {
+  font-size: 5rem;
+  color: #f8c000;
+  position: relative;
+
+  &::before {
+    content: '';
+    height: 0.4rem;
+    width: 30%;
+    background-color: #f8c000;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: headlineAnimate 2s ease-in-out infinite;
+  }
+
+  @keyframes headlineAnimate {
+    50% {
+      top: 90%;
+      transform: translateX(-50%) scale(1.2);
+      width: 30%;
+    }
+  }
+}
