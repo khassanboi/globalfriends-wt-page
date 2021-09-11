@@ -29,11 +29,11 @@ h2.h2 {
 
   &::before {
     content: '';
-    height: 0.4rem;
-    width: 30%;
+    height: 0.3rem;
+    width: 20%;
     background-color: #f8c000;
     position: absolute;
-    top: 95%;
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     animation: headlineAnimate 2s ease-in-out infinite;
@@ -41,9 +41,8 @@ h2.h2 {
 
   @keyframes headlineAnimate {
     50% {
-      top: 90%;
+      top: 95%;
       transform: translateX(-50%) scale(1.2);
-      width: 30%;
     }
   }
 
@@ -51,7 +50,7 @@ h2.h2 {
     color: white;
 
     &::before {
-      background-color: white;
+      background-color: #0085ff;
     }
   }
 }
