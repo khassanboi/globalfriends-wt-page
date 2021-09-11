@@ -8,7 +8,7 @@
   padding: 1.5rem 3rem;
   font-size: 2rem;
   border-radius: 10rem;
-  background-color: #dc3c4d;
+  background-color: #ffb100;
   color: white;
 }
 
@@ -18,9 +18,13 @@
   margin-top: 5rem;
 }
 
+.btn--blue {
+  background-color: #0085ff;
+}
+
 h2.h2 {
   font-size: 5rem;
-  color: #f8c000;
+  color: #0085FF;
   position: relative;
 
   &::before {
