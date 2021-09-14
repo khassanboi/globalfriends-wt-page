@@ -24,8 +24,10 @@
 
 h2.h2 {
   font-size: 5rem;
-  color: #0085FF;
+  color: #0085ff;
   position: relative;
+  align-self: center;
+  justify-self: center;
 
   &::before {
     content: '';
@@ -50,7 +52,7 @@ h2.h2 {
     color: white;
 
     &::before {
-      background-color: #0085ff;
+      display: none;
     }
   }
 }
