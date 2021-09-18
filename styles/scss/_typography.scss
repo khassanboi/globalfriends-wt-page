@@ -53,8 +53,12 @@ h2.h2 {
     color: white;
 
     &::before {
-      display: none;
+      background-color: white;
     }
+  }
+
+  &.no-anim::before {
+    display: none;
   }
 }
 

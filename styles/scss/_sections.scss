@@ -276,3 +276,29 @@
     }
   }
 }
+
+.honour {
+  display: flex;
+
+  &__left,
+  &__right {
+    padding: 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__right {
+    padding: 3rem;
+    border-left: 1px solid #366b9c;
+  }
+
+  &__contacts {
+    align-self: flex-start;
+  }
+
+  img {
+    width: 100%;
+    margin: 5rem 0;
+  }
+}
