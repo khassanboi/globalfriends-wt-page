@@ -1,11 +1,14 @@
 .aboutus {
   display: flex;
+  background-image: url(../../images/about-us-hero.png);
+  background-position: right;
 
   &__left {
-    padding: 5rem;
     width: 55%;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0.9) 100%);
     align-items: center;
     justify-content: center;
 
@@ -96,7 +99,7 @@
 }
 
 .qualify {
-  background-color: #ffb100;
+  background-color: #ff9102;
   display: flex;
   flex-direction: row-reverse;
 
@@ -172,6 +175,34 @@
           border-bottom: 1px solid #888;
         }
       }
+    }
+  }
+}
+
+.register {
+  height: 100vh;
+  padding-top: 3rem;
+  background-image: url(../../images/reg-bg.png);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    color: white;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 40%;
+      margin-top: 5rem;
     }
   }
 }

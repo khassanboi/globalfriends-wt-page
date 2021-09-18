@@ -3,12 +3,12 @@
   align-items: center;
   justify-content: center;
   width: fit-content;
-  align-self: start;
+  align-self: center;
   text-decoration: none;
   padding: 1.5rem 3rem;
   font-size: 2rem;
   border-radius: 10rem;
-  background-color: #ffb100;
+  background-color: #ff9102;
   color: white;
 }
 
@@ -33,7 +33,7 @@ h2.h2 {
     content: '';
     height: 0.3rem;
     width: 20%;
-    background-color: #f8c000;
+    background-color: #ff9102;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -78,7 +78,7 @@ p.text {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    background-color: #f8c000;
+    background-color: #ff9102;
     display: flex;
     align-items: center;
     justify-content: center;
