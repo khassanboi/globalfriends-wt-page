@@ -64,6 +64,7 @@
 
 	@media only screen and (max-width: 800px) {
 		min-height: 60vh;
+    padding: 0;
 
 		h1 {
 			font-size: 8rem;
@@ -90,7 +91,7 @@
 
 				img {
 					position: relative;
-					width: 60%;
+					width: 80%;
           transform: translateY(2rem);
 				}
 			}
