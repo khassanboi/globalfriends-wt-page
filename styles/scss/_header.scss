@@ -1,49 +1,99 @@
 .header {
-  padding: 0 5rem;
-  width: 100%;
-  min-height: 100vh;
-  background-color: #0085FF;
-  overflow-y: hidden;
+	padding: 0 5rem;
+	width: 100%;
+	min-height: 100vh;
+	background-color: #0085ff;
+	overflow-y: hidden;
+	position: relative;
 
-  &__content {
-    padding: 5rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-  }
+	&__content {
+		padding: 5rem;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+	}
 
-  &__left {
-    width: 50%;
-    h1 {
-      font-size: 10rem;
-      color: white;
-    }
+	&__left {
+		width: 50%;
+		h1 {
+			font-size: 10rem;
+			color: white;
+		}
 
-    span {
-      font-size: 4rem;
-      color: white;
-      animation: textAnimate 10s linear infinite;
-    }
-  }
+		span {
+			font-size: 4rem;
+			color: white;
+			animation: textAnimate 10s linear infinite;
+		}
+	}
 
-  &__right {
-    width: 50%;
-    text-align: end;
-    align-self: center;
+	&__right {
+		width: 50%;
+		text-align: end;
+		align-self: center;
 
-    img {
-      width: 90%;
-      transform: translateY(8rem);
-    }
-  }
+		img {
+			width: 40%;
+			position: absolute;
+			bottom: 0;
+			right: 2rem;
+		}
+	}
 
-  @keyframes textAnimate {
-    0% {
-      color: white;
-    }
-    50% {
-      color: #ff9102;
-    }
-  }
+	@keyframes textAnimate {
+		0% {
+			color: white;
+		}
+		50% {
+			color: #ff9102;
+		}
+	}
+
+	@media only screen and (max-width: 1200px) {
+		min-height: 90vh;
+	}
+
+	@media only screen and (max-width: 1000px) {
+		min-height: 75vh;
+
+		h1 {
+			font-size: 9rem;
+		}
+	}
+
+	@media only screen and (max-width: 800px) {
+		min-height: 60vh;
+
+		h1 {
+			font-size: 8rem;
+      text-align: center;
+		}
+
+		.header {
+			&__content {
+				flex-direction: column;
+				padding-bottom: 0;
+			}
+
+			&__left {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 5rem;
+			}
+
+			&__right {
+				width: 100%;
+        text-align: center;
+
+				img {
+					position: relative;
+					width: 60%;
+          transform: translateY(2rem);
+				}
+			}
+		}
+	}
 }
