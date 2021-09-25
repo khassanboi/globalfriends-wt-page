@@ -30,6 +30,7 @@
 
 		&__left {
 			width: 100%;
+			padding: 5rem 1rem;
 		}
 
 		&__right {
@@ -39,7 +40,7 @@
 }
 
 .event {
-	padding: 5rem;
+	padding: 5rem 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -54,7 +55,7 @@
 
 	&__left {
 		width: 40%;
-		padding: 3rem;
+		padding: 5rem 1rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -74,7 +75,7 @@
 	}
 
 	&__right {
-		padding: 5rem;
+		padding: 5rem 1rem;
 		width: 60%;
 		display: flex;
 		flex-direction: column;
@@ -191,7 +192,7 @@
 
 		&__card {
 			width: 80%;
-			height: 60rem;
+			height: 100vw;
 
 			&:not(:last-child) {
 				margin-bottom: 5rem;
@@ -234,6 +235,7 @@
 
 		&__left {
 			width: 100%;
+			padding: 5rem 1rem;
 		}
 	}
 }
@@ -293,6 +295,7 @@
 
 		&__left {
 			width: 100%;
+			padding: 5rem 1rem;
 		}
 	}
 }
@@ -331,8 +334,12 @@
 	}
 
 	@media only screen and (max-width: 800px) {
+		&__content {
+			padding-bottom: 30rem;
+		}
+
 		img {
-			width: 60%;
+			width: 80%;
 		}
 	}
 }
@@ -415,7 +422,7 @@
 			padding: 5rem;
 		}
 
-		&__list {
+		ul {
 			padding: 3rem 0;
 		}
 	}
@@ -449,5 +456,14 @@
 
 	@media only screen and (max-width: 800px) {
 		flex-direction: column-reverse;
+
+		&__right {
+			padding-bottom: 1rem;
+		}
+
+		&__left {
+			padding-top: 2rem;
+			border-top: 1px solid #366b9c;
+		}
 	}
 }
